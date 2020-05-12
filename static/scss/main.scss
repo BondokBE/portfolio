@@ -1,0 +1,78 @@
+
+/* ========== Variables & mixins */
+
+$main_color: #34495e;
+$second_color: #e67e22;
+$p_fz: 16px;
+$header_fz: 26px;
+
+
+
+/* =========== Global styles */
+
+
+
+/* =========== Nav */
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #ddd;
+  .logo, .links {
+    display: inline-block;
+  }
+
+  .logo {
+    width: 50%;
+    h1 {
+      margin-top: 0;
+    }
+  }
+
+}
+
+/* =========== Header */
+
+.header {
+  .image {
+    img {
+      width: 180px;
+      border-radius: 50%;
+      border: 2px solid $main_color;
+    }
+  }  
+}
+
+
+
+/* =========== Projects */
+
+
+/* =========== Contact */
+
+
+/* =========== Media Queries */
+
+
+/* Small Tablet */
+@media (min-width: 620px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Large tablets & laptops */
+@media (min-width: 960px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Desktop Screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+
