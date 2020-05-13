@@ -14,9 +14,9 @@
 - Git clone or download this website
 - HTML files in main folder, and all remains files [CSS, JS, images] inside "static" folder
 #### How to run and watch sass files?
-- Open your terminal or cmd and run this command after installing  "node.js"
-` npm install --save sass`
-- To run and watch sass files run this command
-` sass --watch ./path/to/scss/file ./path/to/css/file`
+1) Open your terminal or cmd and run this command after installing  "node.js"
+- ` npm install --save sass`
+2) To run and watch sass files run this command
+- ` sass --watch ./path/to/scss/file ./path/to/css/file`
 #### Screenshot
 ![Image](./website.jpg)	
