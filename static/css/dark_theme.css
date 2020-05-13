@@ -1,4 +1,5 @@
 /* ========== Variables & mixins */
+/* dark_theme */
 /* =========== Global styles */
 * {
   box-sizing: border-box;
@@ -128,7 +129,7 @@ input, textarea {
   margin-bottom: 0;
 }
 .header .text {
-  max-width: 500px;
+  max-width: 600px;
   margin: 20px auto;
   grid-row: 2;
 }
@@ -210,31 +211,11 @@ input, textarea {
   margin: 4px 6px;
   color: #e67e22;
 }
-.contact form {
-  margin: 20px auto;
+.contact .phone {
+  color: #e67e22;
 }
-.contact form input[type=submit] {
-  background-color: transparent;
-  border: 2px solid #09c;
-  color: #09c;
-  padding: 6px 12px;
-  border-radius: 8px;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-}
-.contact form input[type=submit]:hover {
-  background-color: #09c;
-  color: #fff;
-}
-.contact form .button {
-  background-color: transparent;
-  margin-top: 10px;
-  padding-top: 7px;
-}
-.contact form .button:hover {
-  background-color: #09c;
-  color: #fff;
+.contact .phone .fa {
+  color: #e67e22;
 }
 
 /* =========== Footer */
@@ -269,7 +250,7 @@ input, textarea {
 /* small tablets */
 @media (min-width: 620px) {
   .nav .links {
-    grid-column: 5/9;
+    grid-column: 6/9;
   }
 
   input, textarea {
@@ -325,7 +306,7 @@ input, textarea {
 /* Desktop Screens */
 @media (min-width: 1200px) {
   .nav .links {
-    grid-column: 7/9;
+    grid-column: 6/9;
   }
 
   .switch {

@@ -1,4 +1,5 @@
 /* ========== Variables & mixins */
+/* dark_theme */
 /* =========== Global styles */
 * {
   box-sizing: border-box;
@@ -52,7 +53,6 @@ input, textarea {
   min-width: 260px;
   border-radius: 8px;
   border: 2px solid #235bc2;
-  color: #333;
   display: block;
   margin: 10px auto;
 }
@@ -127,7 +127,7 @@ input, textarea {
   margin-bottom: 0;
 }
 .header .text {
-  max-width: 500px;
+  max-width: 600px;
   margin: 20px auto;
   grid-row: 2;
 }
@@ -155,7 +155,7 @@ input, textarea {
 }
 .projects .project {
   background-color: #fff;
-  box-shadow: 1px 1px 1px white;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
   border-radius: 8px;
   grid-column: 1/10;
   text-align: center;
@@ -204,46 +204,23 @@ input, textarea {
   font-size: 1.7em;
   margin: 4px 6px;
 }
-.contact .social_links a:nth-child(1) {
+.contact .social_links a:nth-child(2) {
   color: #0e76a8;
 }
-.contact .social_links a:nth-child(2) {
+.contact .social_links a:nth-child(3) {
   color: #24292E;
 }
-.contact .social_links a:nth-child(3) {
+.contact .social_links a:nth-child(4) {
   color: #FF0000;
 }
-.contact .social_links a:nth-child(4) {
+.contact .social_links a:nth-child(5) {
   color: #1da1f2;
 }
-.contact .social_links a:nth-child(5) {
+.contact .social_links a:nth-child(6) {
   color: #3C5A99;
 }
-.contact form {
-  margin: 20px auto;
-}
-.contact form input[type=submit] {
-  background-color: transparent;
-  border: 2px solid #235bc2;
+.contact .lead .fa {
   color: #235bc2;
-  padding: 6px 12px;
-  border-radius: 8px;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-}
-.contact form input[type=submit]:hover {
-  background-color: #235bc2;
-  color: #fff;
-}
-.contact form .button {
-  background-color: transparent;
-  margin-top: 10px;
-  padding-top: 7px;
-}
-.contact form .button:hover {
-  background-color: #235bc2;
-  color: #fff;
 }
 
 /* =========== Footer */
@@ -298,7 +275,7 @@ input, textarea {
   }
 
   .switch {
-    margin: 30px 4px;
+    margin: 40px 4px;
   }
 }
 /* Large tablets & laptops */
@@ -323,6 +300,10 @@ input, textarea {
     min-width: 672px;
   }
 
+  .switch {
+    margin: 40px 4px;
+  }
+
   body {
     font-size: 19;
   }
@@ -331,6 +312,10 @@ input, textarea {
 @media (min-width: 1200px) {
   .nav .links {
     grid-column: 7/9;
+  }
+
+  .switch {
+    margin: 40px 4px;
   }
 
   body {

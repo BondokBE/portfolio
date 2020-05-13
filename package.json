@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Mobile First Website",
+  "main": "index.js",
+  "dependencies": {
+    "sass": "^1.26.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BondokBE/portfolio.git"
+  },
+  "author": "Belal Abdulnasser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BondokBE/portfolio/issues"
+  },
+  "homepage": "https://github.com/BondokBE/portfolio#readme"
+}

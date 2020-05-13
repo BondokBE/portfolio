@@ -129,7 +129,7 @@ input, textarea {
       border-radius: 50%;
       border: 2px solid $main_color;
     }
-  }  
+  }
   .image_project {
     width: 90%;
     margin: 15px auto;
@@ -142,7 +142,7 @@ input, textarea {
     }
   }
   .text {
-    max-width: 500px;
+    max-width: 600px;
     margin: 20px auto;
     grid-row: 2;
     h2 {
@@ -226,30 +226,10 @@ input, textarea {
       color: $second_color;
     }
   }
-  form {
-    margin: 20px auto;
-    input[type='submit'] {
-      background-color: transparent;
-      border: 2px solid $main_color;
-      color: $main_color;
-      padding: 6px 12px;
-      border-radius: 8px;
-      text-transform: uppercase;
-      text-decoration: none;
-      display: inline-block;
-      &:hover {
-        background-color: $main_color;
-        color: #fff;
-      }
-    }
-    .button {
-      background-color: transparent;
-      margin-top: 10px;
-      padding-top: 7px;
-      &:hover {
-        background-color: $main_color;
-        color: #fff;
-      }
+  .phone {
+    color: $second_color;
+    .fa {
+      color: $second_color;
     }
   }
 }
