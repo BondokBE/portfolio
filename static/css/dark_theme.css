@@ -7,6 +7,7 @@
 
 body {
   font-size: 17px;
+  background-color: #1E1E1E;
 }
 
 h1, h2 {
@@ -16,7 +17,7 @@ h1, h2 {
 
 a {
   text-decoration: none;
-  color: #235bc2;
+  color: #09c;
 }
 
 li {
@@ -30,8 +31,8 @@ li {
 }
 
 .button {
-  border: 2px solid #235bc2;
-  color: #235bc2;
+  border: 2px solid #09c;
+  color: #09c;
   padding: 6px 12px;
   margin: 5px auto;
   border-radius: 8px;
@@ -39,19 +40,19 @@ li {
   text-decoration: none;
   font-weight: 400;
   display: inline-block;
-  min-width: 200px;
+  min-width: 150px;
 }
 .button:hover {
-  background-color: #235bc2;
+  background-color: #09c;
   color: #fff;
 }
 
 input, textarea {
   background-color: none;
   padding: 10px 15px;
-  min-width: 270px;
+  min-width: 260px;
   border-radius: 8px;
-  border: 2px solid #235bc2;
+  border: 2px solid #09c;
   color: #333;
   display: block;
   margin: 10px auto;
@@ -70,7 +71,7 @@ input, textarea {
   grid-column: 1/1;
 }
 .nav .logo h1 {
-  border: 2px solid #235bc2;
+  border: 2px solid #09c;
   width: 50px;
   border-radius: 8px;
   padding: 5px;
@@ -88,7 +89,16 @@ input, textarea {
   margin: 3px;
 }
 .nav .links li a {
-  color: #235bc2;
+  color: #09c;
+  font-size: 1em;
+}
+.nav .switch {
+  grid-column: 9/10;
+  margin: 25px 6px;
+}
+.nav .switch i {
+  cursor: pointer;
+  color: #09c;
 }
 
 /* =========== Header */
@@ -98,13 +108,13 @@ input, textarea {
   padding: 10px 0;
 }
 .header h1 {
-  color: #235bc2;
+  color: #09c;
   font-size: 1.8em;
 }
 .header .image img {
   width: 180px;
   border-radius: 50%;
-  border: 2px solid #235bc2;
+  border: 2px solid #09c;
 }
 .header .image_project {
   width: 90%;
@@ -123,18 +133,19 @@ input, textarea {
   grid-row: 2;
 }
 .header .text h2 {
-  color: #235bc2;
+  color: #09c;
   font-size: 1.4em;
   text-transform: uppercase;
 }
 .header .text p {
   margin: 10px auto 30px;
+  color: #eee;
 }
 
 /* =========== Projects */
 .projects {
-  background-color: #235bc2;
-  color: #fff;
+  background-color: #09c;
+  color: #1E1E1E;
   padding: 50px 0;
   margin: 40px auto;
 }
@@ -145,8 +156,8 @@ input, textarea {
   text-transform: uppercase;
 }
 .projects .project {
-  background-color: #fff;
-  box-shadow: 1px 1px 1px white;
+  background-color: #292929;
+  box-shadow: 1px 1px 1px rgba(2, 2, 2, 0.4);
   border-radius: 8px;
   grid-column: 1/10;
   text-align: center;
@@ -168,7 +179,11 @@ input, textarea {
 .projects .project h4 {
   font-weight: normal;
   font-size: 1.2rem;
-  color: #333;
+  color: #eee;
+}
+.projects .project h4 span {
+  color: #e67e22;
+  font-weight: 500;
 }
 
 /* =========== Contact */
@@ -179,10 +194,13 @@ input, textarea {
 }
 .contact h2 {
   text-align: center;
-  color: #235bc2;
+  color: #09c;
   margin: 30px 0;
   font-size: 1.6em;
   text-transform: uppercase;
+}
+.contact .lead {
+  color: #eee;
 }
 .contact .social_links {
   padding: 5px;
@@ -190,26 +208,15 @@ input, textarea {
 .contact .social_links a {
   font-size: 1.7em;
   margin: 4px 6px;
-}
-.contact .social_links a:nth-child(1) {
-  color: #0e76a8;
-}
-.contact .social_links a:nth-child(2) {
-  color: #24292E;
-}
-.contact .social_links a:nth-child(3) {
-  color: #FF0000;
-}
-.contact .social_links a:nth-child(4) {
-  color: #3C5A99;
+  color: #e67e22;
 }
 .contact form {
   margin: 20px auto;
 }
 .contact form input[type=submit] {
   background-color: transparent;
-  border: 2px solid #235bc2;
-  color: #235bc2;
+  border: 2px solid #09c;
+  color: #09c;
   padding: 6px 12px;
   border-radius: 8px;
   text-transform: uppercase;
@@ -217,7 +224,7 @@ input, textarea {
   display: inline-block;
 }
 .contact form input[type=submit]:hover {
-  background-color: #235bc2;
+  background-color: #09c;
   color: #fff;
 }
 .contact form .button {
@@ -226,7 +233,7 @@ input, textarea {
   padding-top: 7px;
 }
 .contact form .button:hover {
-  background-color: #235bc2;
+  background-color: #09c;
   color: #fff;
 }
 
@@ -247,7 +254,7 @@ input, textarea {
 /* mid mobiles */
 @media (min-width: 385px) {
   .nav .links {
-    grid-column: 4/10;
+    grid-column: 4/9;
   }
 
   input, textarea {
@@ -256,13 +263,13 @@ input, textarea {
 }
 @media (min-width: 468px) {
   .nav .links {
-    grid-column: 5/10;
+    grid-column: 5/9;
   }
 }
 /* small tablets */
 @media (min-width: 620px) {
   .nav .links {
-    grid-column: 7/10;
+    grid-column: 6/9;
   }
 
   input, textarea {
@@ -280,11 +287,15 @@ input, textarea {
   .project:nth-child(3) {
     grid-column: 7/10;
   }
+
+  .switch {
+    margin: 40px 4px;
+  }
 }
 /* Large tablets & laptops */
 @media (min-width: 960px) {
   .nav .links {
-    grid-column: 7/10;
+    grid-column: 6/9;
   }
 
   .nav .links li {
@@ -303,6 +314,10 @@ input, textarea {
     min-width: 672px;
   }
 
+  .switch {
+    margin: 40px 4px;
+  }
+
   body {
     font-size: 19;
   }
@@ -310,7 +325,11 @@ input, textarea {
 /* Desktop Screens */
 @media (min-width: 1200px) {
   .nav .links {
-    grid-column: 7/10;
+    grid-column: 6/9;
+  }
+
+  .switch {
+    margin: 40px 4px;
   }
 
   body {
@@ -318,4 +337,4 @@ input, textarea {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=dark_theme.css.map */
