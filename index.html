@@ -81,10 +81,11 @@
       <a href="https://www.facebook.com/belalabdulnasser" target="_blank"><i class="fa fa-facebook-square"></i></a>
     </div>
     
-    <form action="POST">
+    <form action="POST" data-netligy="true">
       <input type="text" id="name" name="name" placeholder="Name">
       <input type="email" id="email" name="email" placeholder="Email">
       <textarea name="message" id="message" rows="7" placeholder="Message"></textarea>
+      <div data-netlify-recaptcha="true"></div>
       <button class="button">Send Message &nbsp;<i class="fa fa-paper-plane"></i></button>
     </form>
   </section>

@@ -1,7 +1,8 @@
 
 /* ========== Variables & mixins */
 
-$main_color: #09c;
+/* dark_theme */
+$main_color: #235bc2;
 $second_color: #e67e22;
 
 
@@ -16,7 +17,7 @@ $second_color: #e67e22;
 
 body { 
   font-size: 17px;
-  background-color: #1E1E1E;
+  // background-color: #1E1E1E;
 }
 
 h1,h2 {
@@ -62,7 +63,7 @@ input, textarea {
   min-width: 260px;
   border-radius: 8px;
   border: 2px solid $main_color;
-  color: #333;
+  // color: #333;
   display: block;
   margin: 10px auto;
 }
@@ -151,7 +152,7 @@ input, textarea {
     }
     p {
       margin: 10px auto 30px;
-      color: #eee;
+      // color: #eee;
     }
   }
 }
@@ -160,7 +161,7 @@ input, textarea {
 
 .projects {
   background-color: $main_color;
-  color: #1E1E1E;
+  color: #fff;
   padding: 50px 0;
   margin: 40px auto;
   h2 {
@@ -170,8 +171,8 @@ input, textarea {
     text-transform: uppercase;
   }
   .project {
-    background-color: #292929;
-    box-shadow: 1px 1px 1px rgba(2,2,2, 0.4);
+    background-color: #fff;
+    box-shadow: 1px 1px 1px rgba(255,255,255, 0.6);
     border-radius: 8px;
     grid-column: 1/10;
     text-align: center;
@@ -192,7 +193,7 @@ input, textarea {
     h4 {
       font-weight: normal;
       font-size: 1.2rem;
-      color: #eee;
+      color: #333;
       span {
         color: $second_color;
         font-weight: 500;
@@ -222,8 +223,12 @@ input, textarea {
     a {
       font-size: 1.7em;
       margin: 4px 6px;
-      color: $second_color;
     }
+    a:nth-child(1) {color: #0e76a8}
+    a:nth-child(1) {color: #24292E}
+    a:nth-child(1) {color: #FF0000}
+    a:nth-child(1) {color: #1da1f2}
+    a:nth-child(1) {color: #3C5A99}
   }
   form {
     margin: 20px auto;
@@ -282,7 +287,7 @@ input, textarea {
 
 /* small tablets */
 @media (min-width: 620px) {
-  .nav .links {grid-column: 6/9;}
+  .nav .links {grid-column: 5/9;}
   input, textarea {min-width: 480px;}
   .project:nth-child(1) {grid-column: 1/4;}
   .project:nth-child(2) {grid-column: 4/7;}
@@ -309,7 +314,7 @@ input, textarea {
 
 /* Desktop Screens */
 @media (min-width: 1200px) {
-  .nav .links {grid-column: 6/9;}
+  .nav .links {grid-column: 7/9;}
   .switch {
     margin: 40px 4px;
   }

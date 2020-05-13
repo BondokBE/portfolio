@@ -269,7 +269,7 @@ input, textarea {
 /* small tablets */
 @media (min-width: 620px) {
   .nav .links {
-    grid-column: 6/9;
+    grid-column: 5/9;
   }
 
   input, textarea {
@@ -325,7 +325,7 @@ input, textarea {
 /* Desktop Screens */
 @media (min-width: 1200px) {
   .nav .links {
-    grid-column: 6/9;
+    grid-column: 7/9;
   }
 
   .switch {
